@@ -1,0 +1,19 @@
+{
+  "name": "pentlad_hills_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slav666/Pentland_Hills_project.git"
+  },
+  "author": "Slawomir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slav666/Pentland_Hills_project/issues"
+  },
+  "homepage": "https://github.com/Slav666/Pentland_Hills_project#readme"
+}
