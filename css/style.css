@@ -23,35 +23,32 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin: 5rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
-  animation-name: moveToRight;
-  animation-duration: 2s; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
-  animation-name: moveToLeft;
-  animation-duration: 2s;
-  animation-delay: 1s; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation-name: moveToRight;
+    animation-duration: 2s; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation-name: moveToLeft;
+    animation-duration: 2s;
+    animation-delay: 1s; }
 
 @keyframes moveToRight {
   0% {
@@ -73,8 +70,7 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -87,10 +83,15 @@ body {
 .btn--white {
   color: #777;
   background-color: #fff; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7); }
+  .btn:hover::after {
+    transform: scale(1.5);
+    opacity: 0; }
 
 .btn.active {
   transform: translateY(-1px);
@@ -107,10 +108,3 @@ body {
   left: 0;
   z-index: -1;
   transition: all .4s; }
-
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scale(1.5);
-  opacity: 0; }
