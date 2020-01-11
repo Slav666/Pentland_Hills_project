@@ -160,6 +160,12 @@ body {
     .card__side--back {
       background-color: bisque;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #9966ff, #4c0080); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #ffc266, #995c00); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
