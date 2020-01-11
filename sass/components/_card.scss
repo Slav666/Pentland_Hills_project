@@ -1,4 +1,25 @@
 .card {
-    background-color: aqua;
-    height: 50rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    &__side {
+        // background-color: aqua;
+        height: 50rem;
+        transition: all .8s;
+
+
+        &--front {
+            background-color: aqua;
+        }
+
+        &--back {
+            background-color: bisque;
+        }
+    }
+
+    &:hover &__side{
+        transform: rotateY(180deg);
+    }
+
+
 }

@@ -143,8 +143,17 @@ body {
   transform: translateY(-2px); }
 
 .card {
-  background-color: aqua;
-  height: 50rem; }
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    height: 50rem;
+    transition: all .8s; }
+    .card__side--front {
+      background-color: aqua; }
+    .card__side--back {
+      background-color: bisque; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
 
 .composition {
   position: relative; }
