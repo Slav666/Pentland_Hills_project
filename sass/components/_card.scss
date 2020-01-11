@@ -1,12 +1,18 @@
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
 
     &__side {
         // background-color: aqua;
         height: 50rem;
         transition: all .8s;
-
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
 
         &--front {
             background-color: aqua;
@@ -14,12 +20,15 @@
 
         &--back {
             background-color: bisque;
+            transform: rotateY(180deg);
         }
     }
 
-    &:hover &__side{
+    &:hover &__side--front {
         transform: rotateY(180deg);
     }
-
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
 
 }
