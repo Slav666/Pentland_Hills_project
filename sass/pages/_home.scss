@@ -21,4 +21,9 @@ margin-top: -20vh;
     background-image: linear-gradient(105deg, rgba(white, .7) 0%, rgba(white, 0.7) 50%, transparent 50%), url("../img/photo_lake1.jpg");
     background-size: cover;
     height: 50rem;
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
 }
